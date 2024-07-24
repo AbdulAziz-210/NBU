@@ -19,6 +19,7 @@
 
 const faqs = document.querySelectorAll('.faq-wrap'),
     icon = document.querySelectorAll("i")
+    
 
 faqs.forEach(faq => {
     faq.addEventListener("click", () => {
@@ -42,6 +43,18 @@ console.log(child.childNodes)
 })
 
 
+//  Hamburger
 
-// let arr = document.querySelectorAll(".faq-button")
-// arr.style.color = "red"
+// const hamburgerBtn = document.querySelector(".header__hamburger-btn"),
+//     nav = document.querySelector(".header-navbar")
+
+// hamburgerBtn.forEach(btn => {
+//     btn.addEventListener("click", () => {
+//         nav.classList.add("show")
+//         nav.classList.remove("hide")
+//         document.body.style.overflow = "hidden"
+//     })
+// })
+
+
+
