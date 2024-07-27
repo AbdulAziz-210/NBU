@@ -20,7 +20,10 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
 
 /* .container {
     width: 1250px;
@@ -48,11 +51,13 @@ html, body {
     
     position: relative;
     height: 70px;
+    /* background-color: #274378; */
 }
 
 .navbar-list {
     display: flex;
-    margin-right: 159px;
+    /* margin-right: 159px; */
+    margin-right: 135px;
 }
 
 .navbar-item:not(:first-child) {
@@ -68,30 +73,75 @@ html, body {
 }
 /* Right navbar */
 
-.right-nav {
-    display: flex;
-    align-items: center;
-}
 
-.right-item---margin {
-    margin-right: 8px;
-}
 
+
+.language-list:hover {
+    cursor: pointer;
+}
+.language-item {
+    position: relative;
+    margin-right: 25px;
+    fill: transparent;
+    transition: all 0.4s;
+}
+.popap-wrap {
+    position: absolute;
+    width: 150%;
+    height: 0;
+    overflow-y: hidden;
+    background-color: #ffffff;
+    border-radius: 10px;
+    top: 26px;
+    left: -29px;
+}
+.popap-link{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    color: #262A38;
+    background-color: #E6ECF2;
+    text-decoration: none;
+    list-style-type: none;
+}
+.popap-link:not(:last-child) {
+    margin-bottom: 5px;
+}
+.popap-link:hover {
+    color: #BF945D;
+}
 .language-text {
-    margin-right: 5px;
+    text-decoration: none;
+    list-style-type: none;
+    color: #262A38;
+}
+.language-item:hover > .language-text{
+    color: #BF945D;
 }
 
-.right-item---padding {
-    display: flex;
-    align-items: center;
-    margin-right: 22px;
+.language-item:hover > .popap-wrap {
+    height: auto;
+    padding: 5px;
 }
+
+.language-item > .world-icon > path, .language-item > .down-icon > g > path, .language-text, .popap-wrap {
+    transition: ease 0.4s;
+}
+
+.language-item:hover > .world-icon > path, .language-item:hover > .down-icon > g > path {
+    fill: #BF945D;
+}
+
+
+
 
 .navbar-button {
     border: 2px solid #BF945D ;
     border-radius: 10px;
     padding: 10px 32px;
     transition: ease-in-out 0.4s;
+    background-color: transparent;
 }
 .button-link {
     color: #BF945D;
@@ -115,12 +165,13 @@ html, body {
 
 @media (max-width:600px) {
     .site-header {
-        margin-bottom: 400px;
+        position: relative !important;
     }
     .header{
         padding: 7.95px 15px;
         margin: 0;
         width: 100%;
+
     }
     .navbar-wrap {
         width: 100%;
@@ -134,13 +185,24 @@ html, body {
         width: 30px;
     }
     .header-navbar {
-        padding-top: 50px;
         width: 100%;
-        display: flex;
+        display: none;
         flex-direction: column;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        background-color: #fff;
+        height: max-content;
+        padding-bottom: 25px;
+        
+    }
+    .block {
+        display: flex !important;
     }
     .navbar-list{
-        /* width: 100%; */
         flex-direction: column;
         text-align: center;
         gap: 0;
@@ -154,13 +216,15 @@ html, body {
         padding-top: 24px;
     }
 
-
-    .right-nav {
-        display: flex;
-        margin-bottom: 40px;
-    }
     .header__hamburger-btn {
         display: block;
+    }
+
+
+    
+    .language-item {
+        margin-bottom: 32px;
+        margin-right: 0;
     }
     
 }
@@ -575,7 +639,7 @@ html, body {
 
 
 /*  */
-/* responsiv */
+/* products section responsiv */
 
 
 @media (max-width: 600px ) {
@@ -643,6 +707,7 @@ html, body {
 }
 
 .working-strong {
+    display: block;
     margin-bottom: 16px;
     font-size: 22px;
     font-weight: 700;
@@ -652,7 +717,7 @@ html, body {
 }
 
 /*  */
-/* responiv */
+/* Workin section responiv */
 
 @media(max-width:600px) {
     .working-title {
@@ -856,7 +921,7 @@ select {
 
 
 /*  */
-/* responsiv */
+/* Application section responsiv */
 
 @media (max-width:600px) {
     .application {
@@ -985,7 +1050,7 @@ select {
 
 
 /*  */
-/* Responsiv */
+/* Faq secton responsiv */
 
 @media (max-width:600px) {
     .application-section {

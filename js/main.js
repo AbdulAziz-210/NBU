@@ -56,5 +56,21 @@ console.log(child.childNodes)
 //     })
 // })
 
+// \\ //
 
+
+const navbar = document.querySelector(".header-navbar"),
+    burgerBtn = document.querySelector(".header__hamburger-btn")
+
+
+burgerBtn.addEventListener("click", () => {
+    navbar.classList.toggle("block")
+    // animation //
+    navbar.classList.add("fade")
+    navbar.classList.remove("fade")
+
+})
+
+
+// const language = document.querySelector(".language-wrap")
 
