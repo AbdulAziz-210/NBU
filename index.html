@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- checkbox -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- AOS -->
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   
 </head>
 <body>
@@ -97,7 +100,7 @@
       </div>
     </section>
     
-    <section class="advantages-section container">
+    <section class="advantages-section container" data-aos="fade-left">
       <!-- containerni ochirish kerak -->
       <!-- <div class="container"> -->
         <div class="advantages">
@@ -120,7 +123,7 @@
               </div>
               
               
-              <div class="advantages-group">
+              <div class="advantages-group" >
                 
                 <div class="left-wrap">
                   <img src="./images/advantages/deadline.svg" alt="">
@@ -163,7 +166,7 @@
       <!-- </div> -->
     </section>
     
-    <section class="products-section">
+    <section class="products-section" data-aos="fade-right">
       <div class="container">
         <div class="products">
           <h1 class="products-title">Кредитные продукты</h1>
@@ -230,7 +233,7 @@
       </div>
     </section>
     
-    <section class="working-section">
+    <section class="working-section" data-aos="fade-left">
       <div class="container">
         <div class="working">
           <h2 class="working-title">Как это работает?</h2>
@@ -259,7 +262,7 @@
       </div>
     </section>
     
-    <section class="application-section">
+    <section class="application-section" data-aos="fade-right">
       <div class="container">
         <div class="application">
           <h2 class="application-title mb-0">Заявка на кредит</h2>
@@ -335,7 +338,7 @@
       </div>
     </section>
     
-    <section class="faq-section">
+    <section class="faq-section" data-aos="fade-left">
       <div class="container">
         <div class="faq">
           <h2 class="faq-title">Ваши вопросы — наши ответы</h2>
@@ -419,11 +422,10 @@
           </div>
         </div>
       </section>
-      
-      
+
     </main>
     
-    <footer class="site-footer">
+    <footer class="site-footer" data-aos="fade-right">
       <div class="container">
         <div class="footer">
           <img src="./images/NBU Logo.svg" alt="">
@@ -470,6 +472,14 @@
         
         <!-- Bootstrap link -->
         <script src="./js/bootstrap.bundle.min.js" ></script>
+        <!-- AOS js -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset:400,
+            duration : 1000
+          });
+        </script>
         <!-- Js link -->
         <script src="./js/main.js"></script>
       </body>
