@@ -60,11 +60,19 @@ console.log(child.childNodes)
 
 
 const navbar = document.querySelector(".header-navbar"),
-    burgerBtn = document.querySelector(".header__hamburger-btn")
+    burgerBtn = document.querySelector(".header__hamburger-btn"),
+    closeImg = document.querySelector(".close-img"),
+    hamburgerImg = document.querySelector(".hamburger-img")
 
 
 burgerBtn.addEventListener("click", () => {
     navbar.classList.toggle("block")
+    closeImg.classList.toggle("block")
+    hamburgerImg.classList.toggle("none")
+    
+    
+    
+    
     // animation //
     navbar.classList.add("fade")
     navbar.classList.remove("fade")

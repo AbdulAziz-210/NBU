@@ -159,11 +159,22 @@ html, body {
     border: none;
     display: none;
 }
+.close-img {
+    display: none;
+}
 
 /*  */
 /* responsiv navbar */
 
 @media (max-width:600px) {
+    .header__hamburger-btn {
+        display: block;
+    }
+    /* .close-img {
+        display: block;
+    } */
+
+
     .site-header {
         position: relative !important;
     }
@@ -202,6 +213,9 @@ html, body {
     .block {
         display: flex !important;
     }
+    .none {
+        display: none !important;
+    }
     .navbar-list{
         flex-direction: column;
         text-align: center;
@@ -216,9 +230,9 @@ html, body {
         padding-top: 24px;
     }
 
-    .header__hamburger-btn {
+    /* .header__hamburger-btn {
         display: block;
-    }
+    } */
 
 
     
