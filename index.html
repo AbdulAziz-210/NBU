@@ -309,8 +309,8 @@
             <div class="form-wrap">
               <label for="">Юридический статус*</label> <br>
               <select name="Status" id="status" required autocomplete="off">
-                <option value="">Индивидуальный предприниматель</option>
-                <option value="">Юридическое лицо</option>
+                <option class="option" value="">Индивидуальный предприниматель</option>
+                <option class="option" value="">Юридическое лицо</option>
               </select>
             </div>
             <div class="form-wrap">
@@ -321,6 +321,9 @@
               <label for="">Email</label> <br>
               <input class="input" type="text" placeholder="example@example.com" required autocomplete="off">
             </div>
+            <div class="form-wrap error-wrap">
+              <p class="error-text">Некоторые поля заполнены неверно</p>
+            </div>
             
             <!-- checkbox  -->
             
@@ -329,6 +332,13 @@
               <label class="checkbox-label" for="check">Даю согласие на обработку и использования персональных данных </label>
             </div>
             
+
+
+            <!-- next page form -->
+            <!-- <div class="next-form">
+              <h3 class="next-title">Подтверждение номера телефона</h3>
+            </div> -->
+
             
             <div class="button">
               <input type="submit" value="Потдвердить и отправить заявку">

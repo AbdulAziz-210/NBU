@@ -71,8 +71,6 @@ burgerBtn.addEventListener("click", () => {
     hamburgerImg.classList.toggle("none")
     
     
-    
-    
     // animation //
     navbar.classList.add("fade")
     navbar.classList.remove("fade")
@@ -80,5 +78,8 @@ burgerBtn.addEventListener("click", () => {
 })
 
 
-// const language = document.querySelector(".language-wrap")
+// Error validation button
+const errorButton = document.querySelector("error-wrap")
+
+
 

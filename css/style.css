@@ -20,6 +20,9 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+.site-title {
+    overflow: hidden;
+}
 .fade {
 	animation-name: fade;
 	animation-duration: 1.5s;
@@ -51,12 +54,10 @@ html, body {
     
     position: relative;
     height: 70px;
-    /* background-color: #274378; */
 }
 
 .navbar-list {
     display: flex;
-    /* margin-right: 159px; */
     margin-right: 135px;
 }
 
@@ -71,9 +72,8 @@ html, body {
 .navbar-link:hover {
     color: #000;
 }
+
 /* Right navbar */
-
-
 
 
 .language-list:hover {
@@ -167,14 +167,6 @@ html, body {
 /* responsiv navbar */
 
 @media (max-width:600px) {
-    .header__hamburger-btn {
-        display: block;
-    }
-    /* .close-img {
-        display: block;
-    } */
-
-
     .site-header {
         position: relative !important;
     }
@@ -229,13 +221,9 @@ html, body {
         margin-left: 0;
         padding-top: 24px;
     }
-
-    /* .header__hamburger-btn {
+    .header__hamburger-btn {
         display: block;
-    } */
-
-
-    
+    }
     .language-item {
         margin-bottom: 32px;
         margin-right: 0;
@@ -366,9 +354,8 @@ html, body {
 
 @media (max-width:600px) {
     .business-section {
-        /* margin-top: 200px;  olib tashash kk*/
-        /* margin-top: 500px; */
         margin-bottom: 40px;
+        padding-top: 107px;
     }
     .business {
         display: flex;
@@ -414,17 +401,10 @@ html, body {
     width: 100%;
 }
 
-/* .advantages {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
-
 .advantages-folder {
     display: flex;
     gap: 40px;
     align-items: center;
-    /* justify-content: space-between; */
 }
 
 .advantages-title {
@@ -436,7 +416,6 @@ html, body {
     width: calc(50% - 20px);
     position: relative;
     height: 400px;
-    /* margin-right: 100px; */
 }
 
 .advantages-img-wrap img {
@@ -449,10 +428,7 @@ html, body {
     /* transform: translateX(-40px); */
 }
 
-/* .advantages-item {
-    border: 1px solid #D7D7D7;
-    border-radius: 15px;
-} */
+
 
 
 .advantages-wrap {
@@ -864,7 +840,6 @@ select {
     align-items: center;
     justify-content: center;
     margin: auto;
-    /* margin-top: 24px; */
     margin: 24px 21px;
 }
 .checkbox-input {
@@ -897,23 +872,6 @@ select {
 
 
 
-/* .checkbox-input::after {
-    font-family: "Font awesome 5 Free";
-    content: "\f00c";
-    font-weight: 900;
-    font-size: 22px;
-    color: white;
-    display: none;
-}
-.checkbox-input[type="checkbox"]:hover {
-    background-color: #a5a5a5;
-}
-.checkbox-input:checked {
-    background-color: #fff;
-}
-.checkbox-input:checked::after {
-    display: block;
-} */
 
 .button input {
     width: 355px;
@@ -933,6 +891,18 @@ select {
     border-color: #BF945D;
 }
 
+.error-text {
+    background-color: #FFC3C3;
+    display: none;
+}
+.form-wrap:nth-child(5) {
+    width: 100%;
+}
+.form-wrap > .error-text {
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 20px 22px;
+}
 
 /*  */
 /* Application section responsiv */
@@ -1006,10 +976,8 @@ select {
     font-size: 20px;
     color: #262A38;
     margin-bottom: 20px;
-    /* transition: max-height 1.4s ease; */
 }
 .pannel {
-    /* display: none; */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s;
@@ -1064,7 +1032,7 @@ select {
 
 
 /*  */
-/* Faq secton responsiv */
+/* Faq section responsiv */
 
 @media (max-width:600px) {
     .application-section {
@@ -1239,13 +1207,7 @@ select {
         flex-direction: column;
     }
 }
-/*  */
 
-
-
-
-
-/* /// */
 
 
 
