@@ -1009,8 +1009,6 @@ select {
 .done-text {
   font-weight: 500;
   font-size: 18px;
-  /* margin-bottom: 80px; */
-  /* padding-bottom: 80px; */
 }
 
 /* done responsiv start */
@@ -1027,7 +1025,6 @@ select {
   display: none;
 }
 /* done responsiv end */
-
 /* done section end */
 
 /*  */

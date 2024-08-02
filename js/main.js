@@ -1,20 +1,3 @@
-// let acc = document.querySelectorAll(".faq-button")
-
-// for(let i = 0; i <acc.length; i++) {
-//     acc[i].addEventListener("click", function () {
-//         this.classList.toggle("active");
-//         this.parentElement.classList.toggle("active");
-
-//         let pannel = this.nextElementSibling;
-
-//         if(pannel.style.display === "block") {
-//             pannel.style.display = "none";
-//         } else {
-//             pannel.style.display = "block";
-//         }
-//     });
-// }
-
 const faqs = document.querySelectorAll(".faq-wrap"),
   icon = document.querySelectorAll("i");
 
@@ -38,19 +21,6 @@ faqs.forEach((faq) => {
   });
 });
 
-//  Hamburger
-
-// const hamburgerBtn = document.querySelector(".header__hamburger-btn"),
-//     nav = document.querySelector(".header-navbar")
-
-// hamburgerBtn.forEach(btn => {
-//     btn.addEventListener("click", () => {
-//         nav.classList.add("show")
-//         nav.classList.remove("hide")
-//         document.body.style.overflow = "hidden"
-//     })
-// })
-
 // \\ //
 
 const navbar = document.querySelector(".header-navbar"),
@@ -68,26 +38,6 @@ burgerBtn.addEventListener("click", () => {
   navbar.classList.remove("fade");
 });
 
-// // Error validation button
-// const errorButton = document.querySelector("error-wrap");
-
-// // Form submit buttons
-// const appSubmitBtn = document.querySelector("#app-submit-btn");
-// const otpSubmitBtn = document.querySelector("#otp-submit-btn");
-
-// // Form elements
-// const appForm = document.querySelector("#app-table");
-// const otpForm = document.querySelector("#otp-table");
-
-// function onSubmitForm(e) {
-//   e?.preventDefault();
-
-//   appForm.classList.add("hidden");
-//   otpForm.classList.remove("hidden");
-// }
-
-// appForm.addEventListener("submit", onSubmitForm);
-
 // Error validation button
 const errorButton = document.querySelector("error-wrap");
 
@@ -95,9 +45,13 @@ const errorButton = document.querySelector("error-wrap");
 const appSubmitBtn = document.querySelector("#app-submit-btn");
 const otpSubmitBtn = document.querySelector("#otp-submit-btn");
 
+//back button
+const backBtn = document.querySelector("#back-button");
+
 // Form elements
 const appForm = document.querySelector("#app-table");
 const otpForm = document.querySelector("#otp-table");
+const doneSuccess = document.querySelector("#success-modal");
 
 function onSubmitForm(e) {
   e?.preventDefault();
@@ -105,5 +59,22 @@ function onSubmitForm(e) {
   appForm.classList.add("hidden");
   otpForm.classList.remove("hidden");
 }
-
 appForm.addEventListener("submit", onSubmitForm);
+
+// back button onclick function
+function onBackClick(e) {
+  e?.preventDefault();
+
+  appForm.classList.remove("hidden");
+  otpForm.classList.add("hidden");
+}
+backBtn.addEventListener("click", onBackClick);
+
+// done btn function
+function successForm(e) {
+  e?.preventDefault();
+
+  otpForm.classList.add("hidden");
+  doneSuccess.classList.remove("hidden");
+}
+otpSubmitBtn.addEventListener("click", successForm);
