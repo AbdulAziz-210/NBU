@@ -47,6 +47,8 @@ const otpSubmitBtn = document.querySelector("#otp-submit-btn");
 
 //back button
 const backBtn = document.querySelector("#back-button");
+//responsiv back img (Button)
+const backImg = document.querySelector("#back-img");
 
 // Form elements
 const appForm = document.querySelector("#app-table");
@@ -69,6 +71,7 @@ function onBackClick(e) {
   otpForm.classList.add("hidden");
 }
 backBtn.addEventListener("click", onBackClick);
+backImg.addEventListener("click", onBackClick);
 
 // done btn function
 function successForm(e) {
@@ -77,4 +80,4 @@ function successForm(e) {
   otpForm.classList.add("hidden");
   doneSuccess.classList.remove("hidden");
 }
-otpSubmitBtn.addEventListener("click", successForm);
+otpForm.addEventListener("submit", successForm);
